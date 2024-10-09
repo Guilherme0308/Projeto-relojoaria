@@ -1,0 +1,203 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-banner {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-banner:hover {
+    background-color: #32CD32; /* Hover: Fundo verde */
+    color: #000; /* Hover: Texto preto */
+}
+
+/*carrousel de relogios */
+
+/* store*/ 
+
+
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product .product_body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  /* Ensure items are aligned centrally */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 12px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 greenyellow;
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+
+
+/* marcas */
+
+
+.marcs{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+.marcs img{
+    justify-content: space-between;
+    padding: 12px;
+}
+
+
+
+.reviews {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111; /* Fundo preto mais claro para diferenciar */
+    color: #fff; /* Texto branco */
+}
+
+.reviews h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #32CD32; /* Texto verde */
+}
+
+.review {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Ajuste de largura para caber três por linha */
+    border: 1px solid #32CD32; /* Borda verde */
+    border-radius: 10px;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    vertical-align: top; /* Alinhamento vertical */
+    margin: 10px; /* Espaçamento entre os cards */
+}
+
+.review h3 {
+    font-size: 24px;
+    color: #32CD32; /* Nome do autor em verde */
+}
+
+.review p {
+    font-size: 16px;
+    color: #fff; /* Texto branco */
+}
+
+.review p:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #32CD32; /* Estrelas em verde */
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .review {
+        width: calc(50% - 40px); /* Ajuste para dois por linha em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .review {
+        width: calc(100% - 40px); /* Ajuste para um por linha em telas muito pequenas */
+    }
+}
